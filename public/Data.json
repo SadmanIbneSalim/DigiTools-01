@@ -1,0 +1,102 @@
+
+  [
+    {
+    "id": 1,
+    "name": "Pro Resume Builder",
+    "description": "Create professional resumes with AI-powered templates.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "PenTool"
+  },
+  {
+    "id": 2,
+    "name": "Cloud Storage Plus",
+    "description": "Secure and fast cloud storage for all your files.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["1TB storage", "End-to-end encryption", "Sync across devices"],
+    "icon": "Server"
+  },
+  {
+    "id": 3,
+    "name": "AI Code Assistant",
+    "description": "Boost your coding productivity with AI-powered suggestions.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Auto-complete code", "Debug suggestions", "Multi-language support"],
+    "icon": "Cpu"
+  },
+  {
+    "id": 4,
+    "name": "Marketing Analytics Tool",
+    "description": "Track your campaigns and optimize performance easily.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Real-time analytics", "Custom dashboards", "Export reports"],
+    "icon": "BarChart"
+  },
+  {
+    "id": 5,
+    "name": "VPN Secure",
+    "description": "Browse securely and protect your online privacy.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["High-speed servers", "No-log policy", "Global locations"],
+    "icon": "Lock"
+  },
+  {
+    "id": 6,
+    "name": "Website Builder Pro",
+    "description": "Create stunning websites without coding.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Drag & drop builder", "SEO tools", "Responsive design"],
+    "icon": "Globe"
+  },
+  {
+    "id": 7,
+    "name": "Task Automation Suite",
+    "description": "Automate repetitive tasks and workflows effortlessly.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Workflow templates", "API integrations", "Analytics"],
+    "icon": "Zap"
+  },
+  {
+    "id": 8,
+    "name": "Pro E-commerce Dashboard",
+    "description": "Manage your online store with powerful insights.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Sales tracking", "Customer analytics", "Inventory management"],
+    "icon": "ShoppingCart"
+  },
+  {
+    "id": 9,
+    "name": "Social Media Scheduler",
+    "description": "Plan and schedule your posts across all social platforms.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Auto-posting", "Analytics dashboard", "Multi-platform support"],
+    "icon": "Globe"
+  }
+]
