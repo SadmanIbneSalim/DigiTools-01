@@ -3,7 +3,7 @@ import bannerImg from "../../assets/banner.png";
 import { Play } from "lucide-react";
 import icon from '../../assets/Group 5.png'
 
-const Bannar = () => {
+const Banner = () => {
   return (
     <div>
       <div className="hero bg-base-200 min-h-screen">
@@ -37,4 +37,4 @@ const Bannar = () => {
   );
 };
 
-export default Bannar;
+export default Banner;

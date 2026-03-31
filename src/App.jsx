@@ -1,8 +1,9 @@
 
 import './App.css';
-import Bannar from './components/Bannar/Bannar';
+import Banner from './components/Banner/Banner';
 import NavBar from './components/NavBar';
-import Rating from './components/Rating/Rating'
+import Rating from './components/Rating/Rating';
+import Toggle from './components/Toggle/Toggle';
  
 
 
@@ -13,8 +14,9 @@ function App() {
   return (
     <>
     <NavBar/>
-    <Bannar></Bannar>
+    <Banner></Banner>
     <Rating></Rating>
+    <Toggle></Toggle>
     
      
 
