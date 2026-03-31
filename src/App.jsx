@@ -2,6 +2,8 @@
 import './App.css';
 import Bannar from './components/Bannar/Bannar';
 import NavBar from './components/NavBar';
+import Rating from './components/Rating/Rating'
+ 
 
 
 
@@ -12,6 +14,8 @@ function App() {
     <>
     <NavBar/>
     <Bannar></Bannar>
+    <Rating></Rating>
+    
      
 
       
