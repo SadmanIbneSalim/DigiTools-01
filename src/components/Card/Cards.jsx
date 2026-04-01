@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 
-const Cards = ({pricing}) => {
+const Cards = ({pricing,cart,setCart}) => {
+const [isselected , setIsSelected]=useState(false);
+
+
+const handleProducts=()=>{
+  setIsSelected(true);
+  setCart([...cart,pricing])
+
+}
 
 
    
@@ -11,7 +19,7 @@ const Cards = ({pricing}) => {
 
 
             <div className="card flex flex-col flex-1 h-full bg-base-100 shadow-lg  hover:scale-105
-  hover:-translate-y-2 hover:shadow-purple-500/20 transition-all duration-300">
+  hover:-translate-y-2 hover:shadow-purple-500/20 transition-all duration-300 border">
   <div className="card-body">
     <span className="badge badge-xs badge-warning">{pricing.tag}</span>
     <div className="flex justify-between">
@@ -28,7 +36,7 @@ const Cards = ({pricing}) => {
       
     </ul>
     <div className="mt-auto">
-      <button className="btn btn-primary btn-block rounded-full">Buy Now</button>
+      <button onClick={handleProducts} className="btn btn-primary btn-block rounded-full" disabled={isselected}>{isselected?'Added to Cart!!': "Buy Now"}</button>
     </div>
   </div>
 </div>

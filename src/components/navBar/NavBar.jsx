@@ -2,7 +2,9 @@ import React from 'react';
 import { ShoppingCart } from "lucide-react";
 
 
-const NavBar = () => {
+const NavBar = (cart) => {
+  
+  
     return (
         <div className='shadow'>
             <div className="navbar  bg-base-100  max-w-300 mx-auto ">
@@ -42,7 +44,7 @@ const NavBar = () => {
 
   <div className="navbar-end gap-2">
     <span className='relative'><ShoppingCart /></span>
-    <p className='bg-red-700 text-white px-1.5 text-[12px] rounded-full absolute top-3 right-44'>1</p>
+    <p className='bg-red-700 text-white px-1.5 text-[12px] rounded-full absolute top-3 right-44'>{cart.cart.length}</p>
     <a className='text-blue-700 ' href="">Login</a>
     <a className="btn rounded-3xl bg-gradient-to-r from-[#4F39F6] via-[#6A2CF8] to-[#9514FA] p-5 text-white">Get Started</a>
   </div>
