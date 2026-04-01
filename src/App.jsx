@@ -8,10 +8,11 @@ import Toggle from './components/Toggle/Toggle';
 
 import axios, { Axios } from 'axios';
 import { Suspense, useState } from 'react';
-import CardPricing from './components/Card/CardPricing';
+
 import Step from './components/Step';
 import Transparent from './components/Transparent';
 import Footer from './components/Footer';
+import { ToastContainer } from 'react-toastify';
 
  
 const CardPromise= axios.get('Data.json');
@@ -48,7 +49,7 @@ function App() {
     
     
     
-     
+     <ToastContainer />
 
       
 

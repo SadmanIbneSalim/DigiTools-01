@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Card from './Card';
+import { toast } from 'react-toastify';
 
 const Cards = ({pricing,cart,setCart}) => {
 const [isselected , setIsSelected]=useState(false);
@@ -8,9 +9,11 @@ const [isselected , setIsSelected]=useState(false);
 const handleProducts=()=>{
   setIsSelected(true);
   setCart([...cart,pricing])
+  toast(`✅ "${pricing.name}" has been added to your cart!`);
 
 }
 
+// console.log(pricing.);
 
    
     
@@ -20,8 +23,14 @@ const handleProducts=()=>{
 
             <div className="card flex flex-col flex-1 h-full bg-base-100 shadow-lg  hover:scale-105
   hover:-translate-y-2 hover:shadow-purple-500/20 transition-all duration-300 border">
+      <span className="badge text-end badge-xs badge-warning mt-3 ml-3">{pricing.tag}</span>
   <div className="card-body">
-    <span className="badge badge-xs badge-warning">{pricing.tag}</span>
+    <figure className='bg-slate-300 p-3 w-13  rounded-full'>
+    <img className='w-9'
+      src={pricing.icon}
+       />
+  </figure>
+
     <div className="flex justify-between">
       <h2 className="text-3xl font-bold text-neutral/80">{pricing.name}</h2>
       <span className="text-xl">${pricing.price}/mo</span>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='bg-[#101727]' >
+        <div className='bg-[#101727] mt-10' >
             <footer className="footer max-w-300 sm:footer-horizontal  p-10 text-white mx-auto">
   <aside>
     <h1 className='text-3xl font-bold' >DigiTools</h1>
