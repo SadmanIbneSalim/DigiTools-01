@@ -6,7 +6,7 @@ const NavBar = (cart) => {
   
   
     return (
-        <div className='shadow'>
+        <div className='shadow shadow sticky top-0 z-50 bg-white'>
             <div className="navbar  bg-base-100  max-w-300 mx-auto ">
   <div className="navbar-start sha">
     <div className="dropdown">

@@ -6,11 +6,16 @@ import NavBar from './components/navBar/NavBar';
 import Rating from './components/Rating/Rating';
 import Toggle from './components/Toggle/Toggle';
 
-import axios from 'axios';
+import axios, { Axios } from 'axios';
 import { Suspense, useState } from 'react';
 import CardPricing from './components/Card/CardPricing';
+import Step from './components/Step';
+import Transparent from './components/Transparent';
+import Footer from './components/Footer';
+
  
 const CardPromise= axios.get('Data.json');
+
 
 
 function App() {
@@ -24,11 +29,20 @@ function App() {
     <Rating></Rating>
     
     
+    
 
     <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
     <Toggle cart={cart} setCart={setCart} CardPromise={CardPromise}></Toggle>
     </Suspense>
-    {/* <CardPricing ></CardPricing> */}
+    <Step></Step>
+    
+      <Transparent ></Transparent>
+
+      <Footer></Footer>
+    
+
+
+    
     
       
     
