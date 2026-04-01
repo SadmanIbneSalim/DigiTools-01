@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Toggle = () => {
+    const [toggle,setToggle]=useState('Products');
+    console.log(setToggle);
+    
     return (
         
 
@@ -12,8 +15,8 @@ const Toggle = () => {
         Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
       </p>
        <div>
-                <button className='btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full rounded-r-none'>Products</button>
-                <button className='btn rounded-full rounded-l-none '>Cart (2)</button>
+                <button onClick={()=>setToggle('Products')} className={`btn ${toggle ==='Products'?"bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" : "btn-default text-black"}  rounded-full rounded-r-none`}>Products</button>
+                <button onClick={()=>setToggle('Cart')} className={`btn ${toggle==="Cart" ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" : "btn-default text-black"} rounded-full rounded-l-none `}>Cart <span>(2)</span></button>
             </div>
     </div>
   </div>
